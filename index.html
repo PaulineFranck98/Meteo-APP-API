@@ -13,13 +13,13 @@
     
 <div class="card">
     <div class="search">
-        <input type="text" placeholder="enter city name" spellcheck="false">
+        <input type="text" placeholder="Entrez un nom de ville" spellcheck="false">
         <button>
             <img src="images/search.png" alt="search icon">
         </button>
     </div>
     <div class="error">
-        <p>Invalid city name</p>
+        <p>Nom de ville invalide</p>
     </div>
     <div class="weather">
 
@@ -32,14 +32,14 @@
                 <img src="images/humidity.png" alt="humidity icon">
                 <div>
                     <p class="humidity">50%</p>
-                    <p>Humidity</p>
+                    <p>Humidité</p>
                 </div>
             </div>
             <div class="col">
                 <img src="images/wind.png" alt="wind icon">
                 <div>
                     <p class="wind">15 km/h</p>
-                    <p>Wind Speed</p>
+                    <p>Vent</p>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@ async function checkWeather(city){
 
         if(data.weather[0].main == "Clouds"){
             weatherIcon.src="images/clouds.png";
-            document.querySelector(".card").style.backgroundImage = "url('images/clouds.gif')";
+            document.querySelector(".card").style.backgroundImage = "url('images/grey-sky.jpg')";
             
             } 
             else if(data.weather[0].main == "Clear"){
